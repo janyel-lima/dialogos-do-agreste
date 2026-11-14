@@ -3,16 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Diálogos do Agreste</title>
-    <meta name="description" content="Portal cultural, acervo de pílulas audiovisuais, livro de referência e sistema CMS para preservação da memória e sustentabilidade no Agreste alagoano." />
-    <meta property="og:title" content="Diálogos do Agreste" />
-    <meta property="og:description" content="Portal cultural, acervo de pílulas audiovisuais, livro de referência e sistema CMS para preservação da memória e sustentabilidade no Agreste alagoano." />
-    <script type="module" crossorigin src="./assets/index--Y7tlj1v.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BrUaB4Tt.css">
+    <title>Diálogos do Agreste — Memória Visual e Oralidade</title>
+    <meta name="description" content="Portal cultural acessível (eMAG), acervo de pílulas audiovisuais com Libras e audiodescrição, livro de referência e memória socioambiental de Arapiraca (PNAB)." />
+    <meta property="og:title" content="Diálogos do Agreste — Memória Visual e Oralidade" />
+    <meta property="og:description" content="Portal cultural acessível (eMAG), acervo de pílulas audiovisuais com Libras e audiodescrição, livro de referência e memória socioambiental de Arapiraca (PNAB)." />
+    <script type="module" crossorigin src="./assets/index-B9eLF1bQ.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-dHWRN7tZ.css">
   </head>
   <body>
+    <noscript>
+      <div style="padding: 16px; background: #000000; color: #FFFFFF; font-family: sans-serif; border-bottom: 2px solid #FFF333;">
+        <strong>Aviso de Acessibilidade:</strong> Este portal utiliza recursos interativos em JavaScript para reprodução de vídeos acessíveis, busca interna e tradução em Libras (VLibras). Ative o JavaScript no seu navegador para utilizar todas as funcionalidades.
+      </div>
+    </noscript>
     <div id="app"></div>
+    <!-- Suíte VLibras Widget (Governo Federal / UFPB) - Conformidade eMAG -->
+    <script>
+      (function () {
+        try {
+          var saved = JSON.parse(localStorage.getItem('da_vlibras_prefs') || '{}');
+          window.VLibrasWidget = Object.assign(
+            {
+              path: 'https://vlibras.gov.br/app',
+              personalization: 'https://vlibras.gov.br/config/default_logo.json',
+              avatar: saved.avatar || 'icaro',
+              position: saved.position === 'L' ? 'L' : 'R'
+            },
+            window.VLibrasWidget || {}
+          );
+        } catch (e) {}
+      })();
+    </script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      (function () {
+        try {
+          if (window.VLibras && typeof window.VLibras.Widget === 'function') {
+            var prefs = window.VLibrasWidget || {};
+            new window.VLibras.Widget({
+              rootPath: prefs.path || 'https://vlibras.gov.br/app',
+              personalization: prefs.personalization || 'https://vlibras.gov.br/config/default_logo.json',
+              avatar: prefs.avatar || 'icaro',
+              position: prefs.position === 'L' ? 'L' : 'R'
+            });
+          }
+        } catch (e) {
+          console.warn('[VLibras] Falha na inicialização automática:', e);
+        }
+      })();
+    </script>
   </body>
 </html>
-
-
