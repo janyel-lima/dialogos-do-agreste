@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024" role="img" aria-labelledby="t">
+<title id="t">Diálogos do Agreste — campanha (D balão com mandacaru)</title>
+<defs><linearGradient id="gTile" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#26452f"/><stop offset="1" stop-color="#13201a"/></linearGradient>
+<linearGradient id="gOuro" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8d37c"/><stop offset="1" stop-color="#e09f3c"/></linearGradient>
+<linearGradient id="gCreme" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fcf5e6"/><stop offset="1" stop-color="#ecdcbb"/></linearGradient>
+<linearGradient id="gApp" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#26452f"/><stop offset="1" stop-color="#101a15"/></linearGradient></defs>
+<rect x="8" y="8" width="1008" height="1008" rx="224" fill="#1b2a22" stroke="#c9993f" stroke-width="16"/>
+<g transform="translate(512 512) scale(1.1) translate(-530 -556)">
+<path d="M300 270 H500 C680 270 760 380 760 512 C760 644 680 754 500 754 H300 Z" fill="none" stroke="#f0b44c" stroke-width="64" stroke-linejoin="round"/>
+<path d="M268 740 L268 874 L424 740 Z" fill="#f0b44c"/>
+<g fill="none" stroke="#f6ecda" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity=".75"><path d="M604 470 H672 V410"/><path d="M540 650 H650 V580 H700"/><path d="M414 540 H372 V600"/></g>
+<g fill="#f0b44c"><circle cx="672" cy="410" r="10"/><circle cx="700" cy="580" r="10"/><circle cx="372" cy="600" r="9"/></g>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M500 690 V392" stroke="#c3dcae" stroke-width="46"/><path d="M500 610 H438 Q414 610 414 586 V500" stroke="#c3dcae" stroke-width="36"/><path d="M500 556 H562 Q586 556 586 532 V452" stroke="#c3dcae" stroke-width="36"/><path d="M380 692 H640" stroke="#f6ecda" stroke-width="8" opacity=".8"/></g>
+<circle cx="500" cy="366" r="14" fill="#e8793a"/></g>
+</svg>
